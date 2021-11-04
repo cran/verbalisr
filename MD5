@@ -1,0 +1,12 @@
+4312b849bbaa6090f5069fcdfb140295 *DESCRIPTION
+49655ba42b7fbec447fd6d30de33333e *NAMESPACE
+d9b154e938ef1257ff066e5019fc436c *NEWS.md
+062b94cdb79fdabd2dd8a003c63143bd *R/utils.R
+5b2530a448b2dbc23c34d18b088ab309 *R/verbalise.R
+26af70b234eff6091a57b1b5252ab511 *R/verbalisr-package.R
+7ad9bfa721b3a6d951428d5c830c13d7 *README.md
+4f8665c803935ad5f9c633ee9a0e1de1 *man/figures/README-dblcous-1.png
+9589347b4c1f67a4d7b0a59136e7af78 *man/verbalise.Rd
+4ba82c0e68a8d6390318165378684c6a *man/verbalisr.Rd
+669511ecd75ba5a3623d49ac5f08fe7d *tests/testthat.R
+4ed4674a74e3d1186f3ad406ad1facf4 *tests/testthat/test-ped-lists.R
