@@ -4,19 +4,16 @@
 \alias{verbalise}
 \title{Describe a pairwise relationship}
 \usage{
-verbalise(x, ids, verbose = TRUE, debug = FALSE)
+verbalise(x, ids = leaves(x))
 }
 \arguments{
-\item{x}{A \code{ped} object.}
+\item{x}{A \code{ped} object, or a list of such.}
 
 \item{ids}{A vector containing the names of two pedigree members.}
-
-\item{verbose}{A logical.}
-
-\item{debug}{A logical, by default FALSE.}
 }
 \value{
-A character vector.
+An object of class \code{pairrel}. This is essentially a list of lists,
+where each inner list describes a single path.
 }
 \description{
 The description includes all pedigree paths between the two individuals,
@@ -35,17 +32,17 @@ verbalise(x, 3:4)
 
 y = doubleCousins(degree1 = 1, removal1 = 1, half1 = TRUE,
                   degree2 = 2, removal2 = 0, half2 = FALSE)
-verbalise(y, leaves(y))
+verbalise(y)
 
 # Example 3: Full sib mating
 
 z = fullSibMating(1)
-verbalise(z, 5:6)
-verbalise(z, c(1,5))
+verbalise(z)
+verbalise(z, ids = c(1,5))
 
 # Example 4: Quad half first cousins
 
 w = quadHalfFirstCousins()
-verbalise(w, leaves(w))
+verbalise(w)
 
 }
