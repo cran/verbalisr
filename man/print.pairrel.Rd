@@ -7,7 +7,15 @@
 \usage{
 \method{print}{pairrel}(x, ...)
 
-\method{format}{pairrel}(x, cap = TRUE, simplify = FALSE, includePaths = !simplify, ...)
+\method{format}{pairrel}(
+  x,
+  cap = TRUE,
+  simplify = FALSE,
+  abbreviate = FALSE,
+  collapse = NULL,
+  includePaths = !simplify,
+  ...
+)
 }
 \arguments{
 \item{x}{An output of \code{\link[=verbalise]{verbalise()}}.}
@@ -19,6 +27,13 @@ should be capitalised. By default TRUE.}
 
 \item{simplify}{A logical. If TRUE, the descriptions of lineal and avuncular
 relationships are simplified. Default: FALSE.}
+
+\item{abbreviate}{A logical. It TRUE, various abbreviations are applied to
+the descriptions, e.g. 'great-great-' -> 'gg-' and 'once removed' -> '1r'.
+Default: FALSE.}
+
+\item{collapse}{A single string, or NULL. If given, and the relationship has
+multiple descriptions, these are concatenated with \code{paste(..., collapse = collapse)}.}
 
 \item{includePaths}{A logical indicating if the complete paths should be
 included in the output. By default TRUE.}
