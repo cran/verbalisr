@@ -1,3 +1,10 @@
+# verbalisr 0.7.2
+
+* Due to a simple code optimisation, relationships with many paths are now handled significantly faster.
+
+* Require pedtools 2.7.1 or later.
+
+
 # verbalisr 0.7.1
 
 * New formatting arguments `abbreviate` and `collapse`.
